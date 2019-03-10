@@ -1,0 +1,38 @@
+{
+  "name": "@quramy/random-txt",
+  "version": "1.0.0-alpha.0",
+  "description": "A random text genrator",
+  "bin": {
+    "random-txt": "lib/cli.js"
+  },
+  "files": [
+    "lib",
+    "package.json",
+    "README.md",
+    "templates"
+  ],
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "tsc",
+    "prepublish": "npm run clean && nppm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quramy/random-txt.git"
+  },
+  "author": "Quramy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Quramy/random-txt/issues"
+  },
+  "homepage": "https://github.com/Quramy/random-txt#readme",
+  "devDependencies": {
+    "rimraf": "^2.6.3",
+    "typescript": "~3.3"
+  },
+  "dependencies": {
+    "@types/minimist": "^1.2.0",
+    "@types/node": "^11.11.0",
+    "minimist": "^1.2.0"
+  }
+}
