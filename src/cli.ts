@@ -19,7 +19,6 @@ function main() {
   }
 
   const templatePath = path.resolve(__dirname, "../templates/" + templateName + ".json");
-  console.log(templatePath);
   if (!fs.existsSync(templatePath)) {
     console.error(`template "${templateName}" does not exits in templates dir`);
     process.exit(1);
