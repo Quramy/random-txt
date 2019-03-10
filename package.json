@@ -14,7 +14,7 @@
   "scripts": {
     "clean": "rimraf lib",
     "build": "tsc",
-    "prepublish": "npm run clean && nppm run build"
+    "prepublish": "npm run clean && npm run build"
   },
   "repository": {
     "type": "git",
