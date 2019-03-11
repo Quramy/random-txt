@@ -20,7 +20,7 @@ function main() {
 
   const templatePath = path.resolve(__dirname, "../templates/" + templateName + ".json");
   if (!fs.existsSync(templatePath)) {
-    console.error(`template "${templateName}" does not exits in templates dir`);
+    console.error(`template "${templateName}" does not exist in templates dir`);
     process.exit(1);
   }
   const templates = JSON.parse(fs.readFileSync(templatePath, "utf-8")) as string[];
