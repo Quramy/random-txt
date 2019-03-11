@@ -25,7 +25,7 @@ function main() {
   }
   const templates = JSON.parse(fs.readFileSync(templatePath, "utf-8")) as string[];
   const idx = ~~(templates.length * Math.random());
-  const output = templates[idx].replace('%TITLE%', title);
+  const output = templates[idx].replace(/%TITLE%/g, title);
   console.log(output);
 }
 
